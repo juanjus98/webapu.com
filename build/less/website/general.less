@@ -1,0 +1,208 @@
+body {
+    //background: url(../images/pattern.png) repeat #fff;
+    background: #f4f2f2;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.container-head {
+    padding: 10px 0;
+    color: #fff;
+    
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…IgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(-65deg,#f98948 0,#F5C560 100%);
+    background: -webkit-gradient(linear,left top,right bottom,color-stop(0%,#f98948),color-stop(100%,#F5C560));
+    background: -webkit-linear-gradient(-65deg,#f98948 0,#F5C560 100%);
+    background: -o-linear-gradient(-65deg,#f98948 0,#F5C560 100%);
+    background: -ms-linear-gradient(-65deg,#f98948 0,#F5C560 100%);
+    background: linear-gradient(154deg,#f98948 0,#F5C560 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f98948', endColorstr='#F5C560', GradientType=1);
+
+}
+
+.container-body {
+    padding: 10px 0px;
+    background: #fff;
+}
+
+
+.lado-l, .lado-r {
+    min-height: 700px;
+    font-size:12px;
+    padding: 10px;
+}
+
+.lado-l {
+    background: #fff;
+}
+
+.lado-r {
+    background: #f4f2f2;
+    border-left: solid 1px #ccc;
+}
+
+#footer {
+
+    margin: 0;
+    color: #ccc;
+    font-family: Arial;
+    font-size: 11px;
+    padding: 0px;
+
+    .copy-footer{
+        padding: 10px 0;
+    }
+
+    .contact-footer{
+        padding: 10px 0;
+        text-align: right;
+    }
+
+    @media (max-width: @screen-xs-max) {
+        .copy-footer{
+            text-align: center;
+        }
+
+        .contact-footer{
+            text-align: center;
+        }
+
+        .col-md-2 {
+            text-align: center;
+        }
+    }
+
+}
+
+.agentstatus {
+    text-align: center;
+
+    span.label {
+        font-size:11px;
+    }
+}
+
+.table>thead>tr.head-green>th{
+    background-color: @background-table1-head !important;
+    color: @color-table1-head !important;
+}
+
+.table>thead>tr.head-orange>th{
+    background-color: @background-table2-head !important;
+    color: @color-table2-head !important;
+}
+
+.table>thead>tr.head-orange3>th{
+    background-color: @background-table3-head !important;
+    color: @color-table3-head !important;
+}
+
+.head-orange4 {
+    td{
+        background-color: @background-table4-head !important;
+        color: @color-table4-head !important;
+        text-align: center;
+        font-size:16px;
+        font-weight: bold;
+        span{
+            font-size: 12px;
+            font-weight: normal;
+        }
+    }
+
+    #total_abandonadas {
+        color: red !important;
+    }
+}
+
+#cont_agent_time tr td, #cont_agent_atendidas tr td {
+    text-align:center;
+    font-weight: bold;
+}
+
+.queue_row>th, .queue_row>td {
+    background-color: @brand-queue !important;
+    color: #000!important;
+}
+
+.title-box {
+    font-family: 'Arial';
+    font-size: 18px;
+    font-weight: 700;
+    color: #a3a3a3;
+    border-bottom: solid 1px #e5e5e5;
+    margin-bottom: 6px;
+}
+
+.wabox {
+    font-family:Arial;
+    color: #fff;
+    text-transform: uppercase;
+    padding:10px;
+    margin-bottom:20px;
+
+    h2{
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+        font-weight:bold;
+        text-align:center;
+
+        span {
+            font-weight: normal;
+            font-size:10px;
+            display: block;
+        }
+
+    }
+
+    p{
+        font-size: 10px;
+        font-weight: normal;
+        text-align:center;
+        padding:0;
+        margin:0;
+    }
+}
+
+.box-disponibles {
+    background: @brand-success;
+}
+
+.box-conversando {
+    background: @brand-info;
+}
+
+.box-enbreak {
+    background: @brand-warning;
+}
+
+.box-encola {
+    background: @brand-queue;
+}
+
+.box-entrantes {
+    background: @brand-success;
+    margin-bottom:0;
+}
+
+.box-atendidas {
+    background: @brand-info;
+    margin-bottom:0;
+}
+
+.box-abandonadas {
+    background: @brand-danger;
+    margin-bottom:0;
+}
+
+.cont_resumen_dia {
+    background: #fff;
+    padding: 6px 10px;
+    border: solid 1px #e5e5e5;
+    margin-bottom: 10px;
+
+    .title-box {
+        border-bottom:0;
+        margin-bottom:0;
+    }   
+}
