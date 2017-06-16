@@ -172,6 +172,24 @@ body {
   border-bottom: 0;
   margin-bottom: 0;
 }
+.main-menu {
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 1;
+  top: 0;
+  left: 0;
+  background-color: #fc0;
+}
+.main-menu-open {
+  visibility: visible;
+  height: 100%;
+  z-index: 2000;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+  transition: transform 0.4s,opacity .4s;
+}
 .table-bordered-black,
 .table-bordered-black > tbody > tr > td,
 .table-bordered > tbody > tr > th,
