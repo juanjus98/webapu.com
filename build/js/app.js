@@ -1,13 +1,22 @@
 $(function() {
 
 	$('#menu-buton').click(function () {
-		console.log("Open!");
+		console.log("Open menu!");
+		var $animation = $(this).data('animation');
 		var $mainMenu = $('#main-menu');
-		var $animation = $mainMenu.data('animation');
+		var $menu = $('.menu');
 		
-	$($mainMenu).addClass('main-menu-open '+$animation+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-		//$(this).removeClass('');
-		console.log('Abierto configurar animaciòn de menu');
+		$($mainMenu).removeClass().addClass('main-menu main-menu-open '+$animation+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+			$($menu).removeClass('').addClass('menu slideInDown animated');
+			//Aca mostrar animacion de menu.
+	});
+
+	});
+
+	$('#menu-buton-close').click(function () {
+		var $animation = $(this).data('animation');
+		var $mainMenu = $('#main-menu');		
+		$($mainMenu).removeClass().addClass('main-menu main-menu-open '+$animation+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 		//Aca mostrar animacion de menu.
 	});
 
