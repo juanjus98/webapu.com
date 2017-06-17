@@ -16,6 +16,7 @@ $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimat
   $(this).removeClass();
 });
 };*/
+new WOW().init();
 $(function() {
 
 	$('#menu-buton').click(function () {
@@ -25,7 +26,7 @@ $(function() {
 		var $menu = $('.menu');
 		
 		$($mainMenu).removeClass().addClass('main-menu main-menu-open '+$animation+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-			$($menu).removeClass('').addClass('menu slideInDown animated');
+			/*$($menu).removeClass('').addClass('menu slideInDown animated');*/
 			//Aca mostrar animacion de menu.
 	});
 

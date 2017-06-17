@@ -23,40 +23,69 @@ a {
     -webkit-animation: hue 60s infinite linear;
 }
 
-.container-head {
-    padding: 10px 0;
-    color: #fff;
-    
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…IgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-    background: -moz-linear-gradient(-65deg,#f98948 0,#F5C560 100%);
-    background: -webkit-gradient(linear,left top,right bottom,color-stop(0%,#f98948),color-stop(100%,#F5C560));
-    background: -webkit-linear-gradient(-65deg,#f98948 0,#F5C560 100%);
-    background: -o-linear-gradient(-65deg,#f98948 0,#F5C560 100%);
-    background: -ms-linear-gradient(-65deg,#f98948 0,#F5C560 100%);
-    background: linear-gradient(154deg,#f98948 0,#F5C560 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f98948', endColorstr='#F5C560', GradientType=1);
+.secc-porfolio {
+    background-color: #F3F3F3;
+    padding-top: 0px;
+    padding-bottom: 40px;
 
+    .extended-column-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: -30px;
+    }
+
+    .message-inner {
+        img{
+            margin:0;
+        }
+    }
 }
 
-.container-body {
-    padding: 10px 0px;
-    background: #fff;
+.website-item{
+    margin-bottom: 30px;
+    a {
+        img {
+            box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10);
+            transition: all .3s ease;
+            border-radius: 2px;
+
+            display: inline-block;
+            vertical-align: bottom;
+
+        }
+    }
 }
 
+.secc-message {
+    background:#fff;
+    font-family: 'Roboto', sans-serif;
+    color: #7C8A8D;
 
-.lado-l, .lado-r {
-    min-height: 700px;
-    font-size:12px;
-    padding: 10px;
-}
+    .bg-corte {
+        background: url(https://auto-repair.vamtam.com/wp-content/uploads/2015/08/w-arrow-top.png) no-repeat center top;
+        background-size: auto;
+        background-attachment: scroll;
+        padding-top: 25px;
+        padding-bottom: 0px;
+    }
 
-.lado-l {
-    background: #fff;
-}
+    h2{
+        font-size: 3em;
+        font-weight:100;
+        text-align:center;
+        span{
+            font-weight:400;
+        }
+    }
+    p{
+        font-size: 1.3em;
+        font-weight:100;
+        text-align:center;
+    }
 
-.lado-r {
-    background: #f4f2f2;
-    border-left: solid 1px #ccc;
+    .form-contact{
+        margin-bottom:30px;
+    }
 }
 
 #footer {
