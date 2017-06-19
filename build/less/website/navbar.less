@@ -33,7 +33,8 @@
     height: 1;
     top: 0;
     left: 0;
-    background-color: #fc0;
+    font-family: 'Roboto', sans-serif;
+
 
     nav{
         text-align: center;
@@ -42,6 +43,7 @@
         height: 100%;
         font-size: 54px;
         display: table;
+        background-color: rgba(30, 51, 133, 0.8);
 
         .menu {
             list-style: none;
@@ -56,9 +58,8 @@
             li {
                 display: block;
                 a {
-                    font-family: 'Roboto', sans-serif;
                     font-weight: 100;
-                    font-size: 45px;
+                    font-size: 40px;
                     color: #fff;
                     position: relative;
                     text-decoration: none;
@@ -73,7 +74,7 @@
                         left: 0;
                         right: 50%;
                         height: 2px;
-                        background-color: blue;
+                        background-color: @color-secondary-0;
                         transform: scaleX(0);
                         transform-origin: bottom left;
 
@@ -87,7 +88,7 @@
                         right: 0;
                         left : 50%;
                         height: 2px;
-                        background-color: blue;
+                        background-color: @color-secondary-0;
                         transform: scaleX(0);
                         transform-origin: bottom right;
 
@@ -108,7 +109,6 @@
             }
         }
     }
-
 }
 
 .main-menu-open {

@@ -26,8 +26,8 @@ $(function() {
         var headerClouds = new Motio(header, {
             fps: 30,
             speedX: 60,
-            bgWidth: 1024,
-            bgHeight: 1024
+            bgWidth: 1920,
+            bgHeight: 1200
         });
 
         // Play only when in the viewport
@@ -43,7 +43,7 @@ $(function() {
 		var $mainMenu = $('#main-menu');
 		var $menu = $('.menu');
 		
-		$($mainMenu).removeClass().addClass('main-menu main-menu-open '+$animation+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		$($mainMenu).removeClass().addClass('main-menu topwa main-menu-open '+$animation+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 			/*$($menu).removeClass('').addClass('menu slideInDown animated');*/
 			//Aca mostrar animacion de menu.
 	});

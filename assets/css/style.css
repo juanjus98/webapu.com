@@ -6037,12 +6037,13 @@ header .top-menu {
 }
 header .transparent {
   width: 100%;
-  background: url(../images/bg-transparent.png) no-repeat left top;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  align-items: stretch;
+  /*background: url(../images/bg-transparent.png) no-repeat left top;
+		background-size: cover;
+		background-attachment: fixed;
+		position:relative;
+		align-items: stretch;*/
   /*height: 100%;*/
+  /*background-color: rgba(30, 51, 133, 0.5);*/
 }
 .topwa {
   background: url('../images/clouds.jpg') #fff;
@@ -6078,7 +6079,7 @@ header .transparent {
   height: 1;
   top: 0;
   left: 0;
-  background-color: #fc0;
+  font-family: 'Roboto', sans-serif;
 }
 .main-menu nav {
   text-align: center;
@@ -6087,6 +6088,7 @@ header .transparent {
   height: 100%;
   font-size: 54px;
   display: table;
+  background-color: rgba(30, 51, 133, 0.8);
 }
 .main-menu nav .menu {
   list-style: none;
@@ -6102,9 +6104,8 @@ header .transparent {
   display: block;
 }
 .main-menu nav .menu li a {
-  font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 45px;
+  font-size: 40px;
   color: #fff;
   position: relative;
   text-decoration: none;
@@ -6117,7 +6118,7 @@ header .transparent {
   left: 0;
   right: 50%;
   height: 2px;
-  background-color: blue;
+  background-color: #FCEA00;
   transform: scaleX(0);
   transform-origin: bottom left;
   transition: transform 0.3s;
@@ -6129,7 +6130,7 @@ header .transparent {
   right: 0;
   left: 50%;
   height: 2px;
-  background-color: blue;
+  background-color: #FCEA00;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s;
