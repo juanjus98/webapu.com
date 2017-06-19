@@ -57,68 +57,46 @@ a {
 }
 
 .secc-message {
-    background:#fff;
-    font-family: 'Roboto', sans-serif;
-    color: #7C8A8D;
+    font-family: @font-primary;
+    background: url(../images/bg-contact.jpg) fixed no-repeat center center;
+    background-size: auto;
+    background-attachment: fixed;
+    background-color: #fcea00;
 
+    
     .bg-corte {
-        background: url(https://auto-repair.vamtam.com/wp-content/uploads/2015/08/w-arrow-top.png) no-repeat center top;
+        background: url(../images/w-arrow-top.png) no-repeat center top;
         background-size: auto;
         background-attachment: scroll;
         padding-top: 25px;
         padding-bottom: 0px;
+        margin-bottom: 50px;
     }
 
     h2{
         font-size: 3em;
-        font-weight:100;
+        font-weight:300;
         text-align:center;
+        color: @color-primary-1;
         span{
-            font-weight:400;
+            font-weight:600;
         }
     }
     p{
         font-size: 1.3em;
-        font-weight:100;
+        font-weight:300;
         text-align:center;
+        color: @color-primary-1;
     }
 
     .form-contact{
-        margin-bottom:30px;
+        margin-bottom:80px;
     }
 }
 
-#footer {
-
-    margin: 0;
-    color: #ccc;
-    font-family: Arial;
-    font-size: 11px;
-    padding: 0px;
-
-    .copy-footer{
-        padding: 10px 0;
-    }
-
-    .contact-footer{
-        padding: 10px 0;
-        text-align: right;
-    }
-
-    @media (max-width: @screen-xs-max) {
-        .copy-footer{
-            text-align: center;
-        }
-
-        .contact-footer{
-            text-align: center;
-        }
-
-        .col-md-2 {
-            text-align: center;
-        }
-    }
-
+.secc-tecnologies {
+    background: #fff;
+    padding: 30px 0;
 }
 
 .agentstatus {
