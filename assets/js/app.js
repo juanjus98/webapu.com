@@ -18,32 +18,13 @@ $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimat
 };*/
 new WOW().init();
 $(function() {
-
-    var windowSpy = new $.Espy(window);
-    
-    (function () {
-        var header = $('.topwa')[0];
-        var headerClouds = new Motio(header, {
-            fps: 30,
-            speedX: 60,
-            bgWidth: 1920,
-            bgHeight: 1200
-        });
-
-        // Play only when in the viewport
-        windowSpy.add(header, function (entered) {
-            headerClouds[entered ? 'play' : 'pause']();
-        });
-    }());
-    
-
 	$('#menu-buton').click(function () {
 		console.log("Open menu!");
 		var $animation = $(this).data('animation');
 		var $mainMenu = $('#main-menu');
 		var $menu = $('.menu');
 		
-		$($mainMenu).removeClass().addClass('main-menu topwa main-menu-open '+$animation+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		$($mainMenu).removeClass().addClass('main-menu main-menu-open '+$animation+' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 			/*$($menu).removeClass('').addClass('menu slideInDown animated');*/
 			//Aca mostrar animacion de menu.
 	});
@@ -58,6 +39,16 @@ $(function() {
 	});
 
 	});
+
+$('#main-waypoint').waypoint(function() {
+    console.log("Open fix!");
+    /*$(".top-fix").addClass("fadeInDownBig animated");*/
+    $(".top-fix").removeClass().addClass('top-fix fadeInDownBig animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        //Aca mostrar animacion de menu.
+    });
+}, {
+     offset: '0%'
+});
 
 //LightSlider para tools
 $('#tools-slider').lightSlider({
